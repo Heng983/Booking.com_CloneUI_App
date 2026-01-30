@@ -245,7 +245,7 @@ class _BusScreenState extends State<BusScreen> {
                           padding: const EdgeInsets.all(6),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
-                            child: Image.network(
+                            child: Image.asset(
                               item.img,
                               width: double.infinity,
                               fit: BoxFit.cover,

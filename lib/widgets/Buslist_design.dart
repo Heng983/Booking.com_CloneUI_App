@@ -47,7 +47,7 @@ class BuslistDesign extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(9)),
-            child: Image.network(
+            child: Image.asset(
               blist.img,
               height: 370,
               width: double.infinity,
