@@ -165,11 +165,11 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 const CircleAvatar(
                   radius: 40,
-                  backgroundImage: AssetImage("assets/images/profile.jpg"),
+                  backgroundImage: AssetImage("assets/photos/user_img.jpg"),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 14),
                 Text(
-                  "Chea Piseth",
+                  "James Hunt",
                   style: GoogleFonts.moul(
                     fontSize: 18,
                     color: theme.colorScheme.onSurface,
@@ -178,6 +178,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 12),
+          ListTile(
+            leading: Icon(Icons.logout, color: Colors.red, size: 28,),
+            title: Text(
+              "Log-out",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          )
         ],
       ),
     );
@@ -520,8 +531,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             _adults = adults;
                             _children = children;
                             _withPets = withPets;
-
-                            // also update "selected*" if you want
                             selectedRooms = rooms;
                             selectedAdults = adults;
                             selectedChildren = children;
