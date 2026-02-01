@@ -169,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 14),
                 Text(
-                  "James Hunt",
+                  "Max Verstappen",
                   style: GoogleFonts.moul(
                     fontSize: 18,
                     color: theme.colorScheme.onSurface,
@@ -188,6 +188,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontWeight: FontWeight.w600,
               ),
             ),
+          ),
+          DrawerButtonIcon(
+
           )
         ],
       ),

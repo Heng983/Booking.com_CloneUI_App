@@ -3,6 +3,8 @@ import 'package:hotel_app/Screen/Booking_screen.dart';
 import 'package:hotel_app/Screen/ProfileScreen.dart';
 import 'package:hotel_app/Screen/Save_screen.dart';
 import 'package:hotel_app/Screen/homescreen.dart';
+import 'package:hotel_app/widgets/color.dart';
+import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -35,26 +37,35 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   Widget _buildbottomNavigationBar() {
-    return BottomNavigationBar(
-      currentIndex: _currentIndex,
-      onTap: (index) {
+    return MoltenBottomNavigationBar(
+      domeCircleColor: AppColors.blueColor,
+      domeCircleSize: 50,
+      selectedIndex: _currentIndex,
+      onTabChange: (index) {
         setState(() {
           _currentIndex = index;
         });
       },
-      items: [
-        BottomNavigationBarItem(
+      tabs: [
+        MoltenTab(
           icon: Icon(Icons.search_rounded),
-          label: "Search",
+          selectedColor: AppColors.white,
+          //label: "Search",
         ),
-        BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: "Save"),
-        BottomNavigationBarItem(
+        MoltenTab(
+            icon: Icon(Icons.bookmark),
+          selectedColor: AppColors.white,
+            //label: "Save"
+        ),
+        MoltenTab(
           icon: Icon(Icons.luggage_outlined),
-          label: "Bookings",
+          selectedColor: AppColors.white,
+          //label: "Bookings",
         ),
-        BottomNavigationBarItem(
+        MoltenTab(
           icon: Icon(Icons.person_2_outlined),
-          label: "My account",
+          selectedColor: AppColors.white,
+          //label: "My account",
         ),
       ],
     );

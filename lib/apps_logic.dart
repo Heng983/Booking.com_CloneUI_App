@@ -40,12 +40,12 @@ class _AppsState extends State<Apps> {
         elevation: 0,
       ),
 
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white,
-        selectedItemColor: AppColors.blueColor,
-        unselectedItemColor: Colors.black54,
-      ),
+      // bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      //   type: BottomNavigationBarType.fixed,
+      //   backgroundColor: Colors.white,
+      //   selectedItemColor: AppColors.blueColor,
+      //   unselectedItemColor: Colors.black54,
+      // ),
 
       dividerColor: const Color(0xFFEAEAEA),
     );
@@ -54,8 +54,6 @@ class _AppsState extends State<Apps> {
   ThemeData _darkTheme() {
     return ThemeData(
       brightness: Brightness.dark,
-
-      // ✅ important
       scaffoldBackgroundColor: const Color(0xFF0F1115),
 
       appBarTheme: const AppBarTheme(
@@ -66,7 +64,7 @@ class _AppsState extends State<Apps> {
 
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xFF151821), // dark surface
+        backgroundColor: Color(0xFF151821),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
       ),
