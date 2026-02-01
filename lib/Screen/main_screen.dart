@@ -50,22 +50,18 @@ class _MainScreenState extends State<MainScreen> {
         MoltenTab(
           icon: Icon(Icons.search_rounded),
           selectedColor: AppColors.white,
-          //label: "Search",
         ),
         MoltenTab(
             icon: Icon(Icons.bookmark),
           selectedColor: AppColors.white,
-            //label: "Save"
         ),
         MoltenTab(
           icon: Icon(Icons.luggage_outlined),
           selectedColor: AppColors.white,
-          //label: "Bookings",
         ),
         MoltenTab(
           icon: Icon(Icons.person_2_outlined),
           selectedColor: AppColors.white,
-          //label: "My account",
         ),
       ],
     );
